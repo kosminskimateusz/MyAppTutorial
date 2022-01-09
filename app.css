@@ -1,5 +1,45 @@
-header{
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 2rem;
+html {
+    background-color: rgb(33, 34, 41);
+}
+
+
+header {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+div.side-menu-bar {
+  width: 19%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  border-style: groove;
+  border-color: rgb(42, 182, 238);
+}
+
+div.content {
+  width: 80%;
+  padding-left: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border: 1px solid red;
+}
+
+div.container {
+  display: flex;
+}
+
+.content-normal-text {
+  font-size: 2rem;
+  margin-right: 12%;
+}
+
+.content-code {
+  font-size: 1.5rem;
+  background-color: gray;
+  margin-right: 12%;
 }
