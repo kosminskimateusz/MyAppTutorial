@@ -1,5 +1,6 @@
 html {
-    background-color: rgb(33, 34, 41);
+    background-color: #1E1E1E;
+    color:rgb(197, 181, 159);
 }
 
 
@@ -23,7 +24,7 @@ div.side-menu-bar {
 
 div.content {
   width: 80%;
-  padding-left: 8%;
+  padding-left: 10%;
   padding-top: 4%;
   padding-bottom: 4%;
   border: 1px solid red;
@@ -39,7 +40,6 @@ div.container {
 }
 
 .content-code {
-  font-size: 1.5rem;
-  background-color: gray;
-  margin-right: 12%;
+  margin-left: 8%;
+  width: 50%;
 }
