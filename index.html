@@ -19,19 +19,56 @@
           start a course.
         </p>
         <div class="content-code">
-          <pre class="line-numbers">
+      		<pre class="line-numbers">
 			<code class="language-css">div.side-menu-bar {
-				width: 19%;
-				padding-top: 1rem;
-				padding-bottom: 1rem;
-				font-size: 2rem;
-				text-align: center;
-				font-style: normal;
-				border-style: groove;
-				border-color: rgb(42, 182, 238);
-				}</code>
-			</pre>
+			width: 19%;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			font-size: 2rem;
+			text-align: center;
+			font-style: normal;
+			border-style: groove;
+			border-color: rgb(42, 182, 238);
+			}
+			
+			div.side-menu-bar {
+			width: 19%;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			font-size: 2rem;
+			text-align: center;
+			font-style: normal;
+			border-style: groove;
+			border-color: rgb(42, 182, 238);
+			}
+		</code>
+					</pre>
         </div>
+        <br />
+        <div class="content-code">
+          <pre class="line-numbers">
+			<code class="language-javascript">clone: function deepClone(o, visited) {
+				visited = visited || {};
+	
+				var clone; var id;
+				switch (_.util.type(o)) {
+					case 'Object':
+						id = _.util.objId(o);
+						if (visited[id]) {
+								return visited[id];
+						}
+							clone = /** @type {Record<string, any>} */ ({});
+						visited[id] = clone;
+
+						for (var key in o) {
+							if (o.hasOwnProperty(key)) {
+								clone[key] = deepClone(o[key], visited);
+							}
+						}
+					</code>
+					</pre>
+        </div>
+
         <p class="content-normal-text">Next.</p>
         <br />
       </div>

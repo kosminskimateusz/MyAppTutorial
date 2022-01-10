@@ -18,10 +18,14 @@ pre[class*="language-"] {
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
+	/* moje dodane */
+	border-radius: 6px;
+	height: 300px;
 
-	-moz-tab-size: 3.5;
-	-o-tab-size: 3.5;
-	tab-size: 3.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
@@ -35,6 +39,7 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
+
 }
 
 :not(pre) > code[class*="language-"],
