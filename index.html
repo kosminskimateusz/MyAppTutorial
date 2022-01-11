@@ -11,7 +11,33 @@
   </head>
 
   <body>
+    <div class="side-menu-bar">
+			<h2><a href="index.html"><img src="./Icons/home.png" id="home" width="20px" height="20px" /> Home</h2></a>
+			<ul class="nav">
+				<li>
+					<a href="./Sites/JavaScriptTutorial/variables.html">
+						<span>Variables</span>
+					</a>
+				</li>
+				<li>
+					<a href="strings.html">
+						<span>Strings</span>
+					</a>
+				</li>
+				<li>
+					<a href="strings.html">
+						<span>Strings</span>
+					</a>
+				</li>
+				<li>
+					<a href="strings.html">
+						<span>Strings</span>
+					</a>
+				</li>
+			</ul>
+    </div>
     <header>JS Tutorial</header>
+		<hr />
     <div class="container">
       <div class="content">
         <p class="content-normal-text">
@@ -19,63 +45,35 @@
           start a course.
         </p>
         <div class="content-code">
-      		<pre class="line-numbers">
-			<code class="language-css">div.side-menu-bar {
-			width: 19%;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			font-size: 2rem;
-			text-align: center;
-			font-style: normal;
-			border-style: groove;
-			border-color: rgb(42, 182, 238);
-			}
-			
-			div.side-menu-bar {
-			width: 19%;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			font-size: 2rem;
-			text-align: center;
-			font-style: normal;
-			border-style: groove;
-			border-color: rgb(42, 182, 238);
-			}
-		</code>
+          <button onclick="showHideCode('codeCSS')">Show/Hide</button>
+          <br />
+          <br />
+          <pre class="line-numbers" id="codeCSS">
+			      <code class="language-css" id="contentCSS">
+							div.side-menu-bar {
+							width: 19%;
+							npadding-top: 1rem;
+							npadding-bottom: 1rem;
+							nfont-size: 2rem;
+							ntext-align: center;
+							nfont-style: normal;
+							nborder-style: groove;
+							nborder-color: rgb(42, 182, 238);
+							};
+		        </code>
 					</pre>
         </div>
         <br />
         <div class="content-code">
-          <pre class="line-numbers">
-			<code class="language-javascript">clone: function deepClone(o, visited) {
-				visited = visited || {};
-	
-				var clone; var id;
-				switch (_.util.type(o)) {
-					case 'Object':
-						id = _.util.objId(o);
-						if (visited[id]) {
-								return visited[id];
-						}
-							clone = /** @type {Record<string, any>} */ ({});
-						visited[id] = clone;
-
-						for (var key in o) {
-							if (o.hasOwnProperty(key)) {
-								clone[key] = deepClone(o[key], visited);
-							}
-						}
-					</code>
+          <pre class="line-numbers" id="codeCSS1">
+			      <code class="language-javascript">
+              
+					  </code>
 					</pre>
         </div>
 
         <p class="content-normal-text">Next.</p>
         <br />
-      </div>
-      <div class="side-menu-bar">
-        <a href="variables.html">Variables</a>
-        <br />
-        <a href="strings.html">Strings</a>
       </div>
     </div>
     <iframe
@@ -86,10 +84,12 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe>
-    <script src="prism.js"></script>
+    >
+    </iframe>
+    <script src="./Scripts/Prism/prism.js"></script>
+    <script src="Scripts/ShowHide/ShowHideContentCode.js"></script>
   </body>
 </html>
-
+<!-- 
 https://dev.to/ehlo_250/how-to-add-syntax-highlighting-to-code-snippets-on-your-website-app-or-blog-2mi2
-https://www.youtube.com/watch?v=fYq5PXgSsbE&ab_channel=WebDevSimplified
+https://www.youtube.com/watch?v=fYq5PXgSsbE&ab_channel=WebDevSimplified -->

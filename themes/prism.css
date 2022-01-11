@@ -1,5 +1,5 @@
 /* PrismJS 1.26.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+show-language+highlight-keywords+inline-color+unescaped-markup+toolbar+copy-to-clipboard+match-braces */
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+show-language+highlight-keywords+inline-color+unescaped-markup+normalize-whitespace+toolbar+copy-to-clipboard+match-braces */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -18,10 +18,6 @@ pre[class*="language-"] {
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
-	/* moje dodane */
-	border-radius: 6px;
-	height: 300px;
-
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -39,7 +35,6 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-
 }
 
 :not(pre) > code[class*="language-"],
@@ -201,7 +196,7 @@ pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
 
 pre[class*="language-"].line-numbers {
 	position: relative;
-	padding-left: 0em;
+	padding-left: 3.8em;
 	counter-reset: linenumber;
 }
 
@@ -215,7 +210,7 @@ pre[class*="language-"].line-numbers > code {
 	pointer-events: none;
 	top: 0;
 	font-size: 100%;
-	left: -6em;
+	left: -3.8em;
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
