@@ -1,15 +1,11 @@
-
-
-
-*{
+* {
   margin: 0px;
   padding: 0px;
-  text-decoration: none;
-  
-  color: lightblue;
+  box-sizing: border-box;
 }
 
 body {
+  color: lightblue;
   position: relative;
   background-color: #1e1e1e;
 }
